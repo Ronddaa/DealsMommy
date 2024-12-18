@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+#root{
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+  color: #000;
+}
+div {
+  position: relative;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+button{
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container{
+    max-width: 445px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width:768px){
+  .container{
+    max-width: 1440px;
+  }
+}

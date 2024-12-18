@@ -1,0 +1,77 @@
+header{
+    padding: 20px 0;
+    box-shadow: 0px 5px 15px 5px #00000026;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.dealsMommyLogo{
+    max-width: 198px;
+    max-height: 98px;
+}
+.wrapperHeaderSearch{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #00000026;
+    max-height: 47px;
+    padding: 16px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 30%;
+}
+.headerSearch{
+    border: none;
+    font-size: 20px;
+    width: 90%;
+}
+.headerSearch::placeholder{
+    color: #5B5B5B;
+}
+.searchIconSVG{
+    fill: #BC0D2A;
+}
+.redBtnHeader{
+    display: none;
+}
+.wrapperMobileBurger{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.myChoiseLike, .burgerMenuIcon{
+    fill: #BC0D2A;
+}
+.myChoiseLike:hover, .myChoiseLike:focus, .burgerMenuIcon:hover, .burgerMenuIcon:focus{
+    fill: #ad3246;
+}
+@media (min-width:768px){
+    .wrapperHeaderSearch{
+        display: flex;
+    }
+    .redBtnHeader{
+        display: block;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        background-color: #BC0D2A;
+        font-size: 20px;
+        font-weight: 700;
+        transition: 0.2s;
+        color: #fff;
+    }
+    .redBtnHeader:hover, .redBtnHeader:focus{
+        background-color: #fff;
+        color: #BC0D2A;
+        border: 2px solid #BC0D2A;
+        transition: 0.2s;
+        padding: 8px 30px;
+    }
+    .wrapperMobileBurger{
+        display: none;
+    }
+}
