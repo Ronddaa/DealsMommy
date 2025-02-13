@@ -56,8 +56,18 @@ img {
     padding: 0 20px;
 }
 
+.main {
+  padding: 40px 0;
+}
+
 @media (min-width:768px){
   .container{
     max-width: 1440px;
   }
+}
+
+/* swiper */
+
+.main .mySwiper{
+  padding: 20px 10px;
 }

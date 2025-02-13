@@ -1,0 +1,42 @@
+#newlyCardsList{
+    padding: 0;
+}
+.titleNewly{
+    font-weight: 700;
+}
+.newlyCard{
+    max-width: 175px;
+    padding: 20px 10px;
+    box-shadow: 4px 0px 10px 0px #b4b4b4 !important;
+    border-radius: 10px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px !important;
+}
+.newlyCard-title{
+    line-clamp: 3;
+}
+.text-muted{
+    margin-bottom: 0;
+}
+.btnMoreDOrange{
+    border: 1px solid #FF7301;
+    color: #FF7301;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.discountBtn{
+    background-color: #FF7301;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 10px 10px 0;
+}
