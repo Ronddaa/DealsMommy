@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/src/css/footer.css" />
+    <link rel="stylesheet" href="/src/css/header.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/product.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="dealsMommyLogo"
+          src="/public/mainLogo.svg"
+          alt="Deals Mommy"
+          width="230"
+          height="114"
+        />
+        <div class="wrapperHeaderSearch">
+          <input class="headerSearch" type="search" placeholder="search" />
+          <svg class="searchIconSVG" width="24" height="24">
+            <use href="/icons.svg#icon-search"></use>
+          </svg>
+        </div>
+        <button class="redBtnHeader">My favourites</button>
+        <button class="redBtnHeader">Submit deal</button>
+        <button class="redBtnHeader">Deals Calendar</button>
+        <button class="redBtnHeader">USA Market</button>
+        <div class="wrapperMobileBurger">
+          <svg class="myChoiseLike" width="34" height="34">
+            <use href="/icons.svg#icon-likeSVG"></use>
+          </svg>
+          <svg class="burgerMenuIcon" width="34" height="34">
+            <use href="/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </div>
+      </div>
+      <nav class="headerNavigationList">
+        <div class="container">
+          <ul class="wrapperHeaderNavigation">
+            <li>
+              <a class="navigationLink" data-page="index" href="#">Index</a>
+            </li>
+            <li>
+              <a class="navigationLink" data-page="electronics" href="#"
+                >Electronics</a
+              >
+            </li>
+            <li>
+              <a class="navigationLink" data-page="homegarden" href="#"
+                >Home & Garden</a
+              >
+            </li>
+            <li>
+              <a class="navigationLink" data-page="toolsmachinery" href="#"
+                >Tools & Machinery</a
+              >
+            </li>
+            <li>
+              <a class="navigationLink" data-page="toys" href="#">Toys</a>
+            </li>
+            <li>
+              <a class="navigationLink" data-page="sporting" href="#"
+                >Sporting Goods</a
+              >
+            </li>
+            <li>
+              <a class="navigationLink" data-page="clothing" href="#"
+                >Clothing, Shoes & Accessories</a
+              >
+            </li>
+            <li>
+              <a class="navigationLink" data-page="jewelrywatches" href="#"
+                >Jewelry & Watches</a
+              >
+            </li>
+            <li>
+              <a class="navigationLink" data-page="motors" href="#">Motors</a>
+            </li>
+            <li>
+              <a class="navigationLink" data-page="software" href="#"
+                >Software</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="productSection">
+      <div class="container">
+        <!-- Главный слайдер -->
+        <div class="swiper-container main-swiper">
+          <div class="swiper-wrapper" id="mainSwiperWrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Слайдер миниатюр -->
+        <div class="swiper-container thumb-swiper">
+          <div class="swiper-wrapper" id="thumbsSwiperWrapper"></div>
+        </div>
+
+        <!-- Данные о продукте -->
+        <img id="productImage" src="" alt="Product Image">
+        <h1 id="productTitle"></h1>
+        <p id="priceBefore"></p>
+        <p id="priceNow"></p>
+        <span id="discount"></span>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapperFooterLogo">
+          <img
+            src="/public/mainLogo.svg"
+            alt="Deals Mommy"
+            width="230"
+            height="114"
+          />
+          <p class="copyRfooter mobileElementsHide">
+            &copy; 2024. All rights reserved
+          </p>
+        </div>
+        <nav class="footerNavigation mobileElementsHide">
+          <ul class="footerNavStyle">
+            <li>
+              <a class="footerNavigationLink" href="#">Index</a>
+            </li>
+            <li>
+              <a class="footerNavigationLink" href="#">Today deals</a>
+            </li>
+            <li>
+              <a class="footerNavigationLink" href="#">Top menu</a>
+            </li>
+            <li>
+              <a class="footerNavigationLink" href="#">Submit deal</a>
+            </li>
+            <li>
+              <a class="footerNavigationLink" href="#">Privacy Notice</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="wrapperSocialLinks">
+          <p class="textSocialLinsk mobileElementsHide">Social media</p>
+          <div class="sharethis-inline-share-buttons"></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./productPage.js"></script>
+    
+  </body>
+</html>

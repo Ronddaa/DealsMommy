@@ -43,7 +43,7 @@ ol {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 img {
   display: block;
@@ -70,4 +70,22 @@ img {
 
 .main .mySwiper{
   padding: 20px 10px;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Подними или опусти, если нужно */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ff6600 !important; /* Оранжевые точки */
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff3300 !important; /* Цвет активной точки */
 }

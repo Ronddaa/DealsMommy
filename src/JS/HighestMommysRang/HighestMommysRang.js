@@ -26,34 +26,25 @@ const products = [
 ];
 
 // Контейнер для карточек
-const cardList = document.getElementById("newlyCardsList");
+const cardList = document.getElementById("highestMommyRangCardsList");
 
 // Генерация карточек товаров
 products.forEach((product) => {
   const slide = document.createElement("div");
   slide.classList.add("swiper-slide");
 
-  // Кодируем данные в URL
-  const queryString = new URLSearchParams({
-    title: product.title,
-    image: product.image,
-    priceBefore: product.priceBefore,
-    priceNow: product.priceNow,
-    discount: product.discount
-  }).toString();
-
   slide.innerHTML = `
-    <div class="swiper-slide shadow-sm border-0 newlyCard" style="width: 18rem;">
-      <img src="${product.image}" alt="Product Image" class="newlyCard-img-top cardsIMGsize">
-      <div class="newlyCard-body">
-        <h5 class="newlyCard-title">${product.title}</h5>
-        <p class="text-muted"><s>Was: ${product.priceBefore}</s></p>
-        <p class="fs-4 fw-bold textPrice">${product.priceNow}</p>
-        <a href="/src/pages/ProductPage/productPage.html?${queryString}" class="btnMoreDOrange">
-          Deal details <span class="discountBtn">${product.discount}</span>
-        </a>
-      </div>
-    </div>
+    <div class="swiper-slide shadow-sm border-0 highestMommyRangCard" style="width: 18rem;">
+  <img src="${product.image}" alt="Product Image" class="highestMommyRangCard-img-top cardsIMGsize">
+  <div class="highestMommyRang-body">
+    <h5 class="highestMommyRangCard-title">${product.title}</h5>
+    <p class="text-muted"><s>Was: ${product.priceBefore}</s></p>
+    <p class="fs-4 fw-bold textPrice">${product.priceNow}</p>
+    <button class="btnMoreDBlue">
+      Deal details <span class="discountBtn">${product.discount}</span>
+    </button>
+  </div>
+</div>
   `;
 
   cardList.appendChild(slide);

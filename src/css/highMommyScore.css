@@ -1,10 +1,10 @@
-#newlyCardsList{
+#highestMommyCardsList{
     padding: 0;
 }
-.titleNewly{
+.titlehighestMommy{
     font-weight: 700;
 }
-.newlyCard{
+.highestMommyCard{
     max-width: 175px;
     padding: 20px 10px;
     box-shadow: 4px 0px 10px 0px #b4b4b4 !important;
@@ -14,15 +14,15 @@
     justify-content: space-between;
     height: 320px !important;
 }
-.newlyCard-title{
+.highestMommyCard-title{
     line-clamp: 3;
 }
 .text-muted{
     margin-bottom: 0;
 }
-.btnMoreDOrange{
-    border: 1px solid #FF7301;
-    color: #FF7301;
+.btnMoreDRed{
+    border: 1px solid #BC0D2A;
+    color: #BC0D2A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,8 +33,8 @@
     border-radius: 10px;
     margin: 0 auto;
 }
-.discountBtn{
-    background-color: #FF7301;
+.btnMoreDRed .discountBtn{
+    background-color: #BC0D2A;
     padding: 10px;
     color: #fff;
     font-weight: 600;
@@ -42,10 +42,10 @@
 }
 
 @media (min-width: 678px){
-    .newlyBlock{
+    .highestMommyBlock{
         
     }
- .newlyCard{
+ .highestMommyCard{
     max-width: 275px;
     height: auto !important;
  }   

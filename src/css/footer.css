@@ -74,6 +74,9 @@ footer .container{
 .desctopElementsHide{
     display: none;
 }
+.wrapperPrivacy{
+    display: none;
+}
 
 @media (max-width:768px){
     .mobileElementsHide{
